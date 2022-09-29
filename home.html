@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kazibwe Julius, Nalujja Merisa, and Ainomugisha Sasha">
+    <link rel="stylesheet" href="../Styles/main.css">
+    <script src="../Javascript/main.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>simple social media</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-dna'></i>
+                <div class="logo_name">Keep in touch</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list" >
+            <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+            </li>
+            <li>
+                <a href="home.html">
+                    <i class='bx bx-home-alt-2' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="display.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">User</span>
+                </a>
+            </li> 
+            <li>            
+                <a href="#">
+                    <span id="message_count">11</span>
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+            </li>
+            
+            <li>            
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <input id="name" type="file" name="image" accept="image/*" onchange="imageHandler()"><br>
+            <div class="profile">
+                <div class="profile_detail">
+                    <img src="" alt="photo" id="profile">
+                    <div class="name_job">
+                        <div class="name">Sasha</div>
+                        <div class="job">student</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out" ></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="middle">
+            <form action="" class="create-post">
+                <div>
+                    <img src="we.jpg" width="35px" height="35px">
+                </div>
+                <input type="text" placeholder="what's on your mind?" id="create-post">
+                <input type="submit" value="Post" >
+            </form>
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="we.jpg" width="35" height="35">
+                            </div>
+                            <div class="ingo">
+                                <h3>Julius K</h3>
+                                <small>fun</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="photo">
+                        <img src="we.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="action-button">
+                          <div class="interaction-buttons">
+                            <span><i class='bx bx-like'></i></span>
+                            <span><i class='bx bx-dislike' ></i></span>
+                            <span><i class='bx bx-comment' ></i></span>
+                            <span><i class='bx bx-share'></i></span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="we.jpg" width="35" height="35">
+                            </div>
+                            <div class="ingo">
+                                <h3>Mama</h3>
+                                <small>Benard!</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="photo">
+                        <img src="beno.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="action-button">
+                          <div class="interaction-buttons">
+                            <span><i class='bx bx-like'></i></span>
+                            <span><i class='bx bx-dislike' ></i></span>
+                            <span><i class='bx bx-comment' ></i></span>
+                            <span><i class='bx bx-share'></i></span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4>
+                    <i class='bx bx-chat' ></i>
+                </div>
+                <div class="search-bar">
+                    <i class='bx bx-search'></i>
+                    <input type="search" placeholder="Search messages" id="message-search">
+                </div>
+                <div class="category">
+                    <i class='bx bx-edit-alt'></i>
+                    <h6>Write message</h6>
+                    <i class='bx bxs-inbox'></i>
+                    <h6 class="active">Inbox</h6>
+                    <i class='bx bx-send'></i>
+                    <h6 class="sent">Sent messages</h6>
+                </div>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="we.jpg" width="35px" height="35px">
+                    </div>
+                    <div class="message-body">
+                        <h5>Ble$$</h5>
+                        <p>u r fake... </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="we.jpg" width="35px" height="35px">
+                    </div>
+                    <div class="message-body">
+                        <h5>Sasha</h5>
+                        <p>we meet ar cocis for the discussion at 10. </p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="contacts">
+                <div class="contact-heading">
+                    <p id="p1">
+                        <i class='bx bxs-contact'></i>
+                        <span>Contacts</span>
+                    </p>
+                    <p id="p2">
+                        <a href="contact.html">
+                            <i class='bx bx-add-to-queue'></i>
+                            <span>Add new contact</span>
+                        </a> 
+                    </p>
+                </div>
+                <div class="contact">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="beno.jpg" width="35px" height="35px">
+                        </div>
+                        <h5>Sasha</h5>
+                    </div>   
+                    <div class="action">
+                        <button>delete</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p>Change your font-size, color and background </p>
+            <div class="font-size">
+                <h4>Font size</h4>
+                <div>
+                    <h6>Min</h6>
+                    <div class="choose-size">
+                        <span class="fs1"></span>
+                        <span class="fs2 active"></span>
+                        <span class="fs3"></span>
+                        <span class="fs4"></span>
+                        <span class="fs5"></span>
+                    </div>
+                    <h3>Max</h3>
+                </div>
+            </div>
+
+            <div class="color">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color1 active"></span>
+                        <span class="color2"></span>
+                        <span class="color3"></span>
+                        <span class="color4"></span>
+                        <span class="color5"></span>
+                    </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg active">
+                    <div class="bg1">
+                        <span></span>
+                        <h5>Light</h5>
+                    </div>
+                </div>
+                <div class="choose-bg">
+                    <div class="bg2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                </div>
+                <div class="choose-bg ">
+                    <div class="bg3">
+                        <span></span>
+                        <h5>Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
